@@ -1,0 +1,203 @@
+---
+id: how-to-work-with-kpi-trends
+title: How to Work with KPI Trends
+sidebar_position: 1
+slug: /how-to-work-with-kpi-trends
+description: Explore Transpara's trends visualization tool to monitor your business's real-time performance, focusing on Key Performance Indicator (KPI) trends. Learn how to access KPI trends, navigate the KPI panel, and utilize interactive tools for a comprehensive analysis.
+tags: ['trend', 'KPI', 'guide']
+---
+
+import StylizedImage from '@site/src/components/StylizedImage/StylizedImage';
+
+# How to Work With KPI Trends
+
+Transpara's trends visualization tool empowers you to monitor your business performance in real time closely. Trends can provide insights into your business's performance over time. Key performance indicators (KPI) trends are vital to Transpara products, allowing you to visualize data and track your key performance indicators efficiently. In this guide, we will explore the visualization features available to you when using KPIs trends in Transpara.
+
+:::info Trend Types
+Inside Transpara, you can access several trend types, including KPI, SPC (Statistical Process Control), and multiple-pin trends. The use of each trend type varies depending on your specific use case.
+
+This article focuses on KPI trends only. Check the respective [SPC](#) and [multiple-pin trend](#) guides to learn more about them.
+:::
+
+## How to Access KPI Trends
+
+To access a KPI trend, follow these steps:
+
+1. Access [**Visual KPI**](#) platform.
+2. Navigate to the **Dashboard** tab.
+3. Click on the **Expand** button at the top-right corner of your desired KPI.
+
+<StylizedImage
+  imgURL="img/transpara/expand-btn.png"
+  alt="KPI panel expand button"
+  wSize="600px"
+/>
+
+You'll access the visualization panel for the selected KPI.
+
+## KPI Panel Information
+
+KPI trends display real-time data, updating constantly to reflect the latest information. On this page you find:
+
+1. **KPI data**: On the center of the screen you find thegraph with KPI data. Horizontal lines represent limits or targets, which you can customize as needed. The limits and targets allow you to get insights about the current KPI behavior quickly.
+
+2. **Legend**: All existing lines on the graph are identified on the legend. Click on a legend item to toggle its visibility.
+
+3. **Time Range Control**: It displays the current time range. In addition, it provides buttons to navigate to older or new time intervals. You can modify the time range of the KPI view using the **Time Ranges** functionality.
+
+4. **Functionalities**: KPI trends visualization provides several configurations to change how you analyze the KPI data. Check the [Features of the KPI Panel](#features-of-the-kpi-panel) to learn about the available options.
+
+5. **Interaction tools**: These tools enable you to interact with the graph. For further information, check the [Interaction tools](#interaction-tools).
+
+<StylizedImage
+  imgURL="img/transpara/kpi-panel.png"
+  alt="KPI panel available options"
+  wSize="600px"
+/>
+
+If you have forecast data available, it will be displayed at the right of the vertical dashed line on the trend.
+
+## Features of the KPI Panel
+
+Access the KPI panel features by clicking on the buttons located at the top-left. Below is a list and description of the existing options from left to right.
+
+- **Trend Options**:
+
+  - **Trend Scale**: Choose between **Single Scale** if you are analyzing a single KPI or related KPIs or **Multiple Scales** if you are dealing with KPIs related to different variables or varying scales of magnitude.
+
+  - **Trend Type**: Transpara KPI data points are obtained at fixed intervals and this option determines the connection between the data points when creating the trend graph.
+
+  - **Auto Play**: Enable or turn off automatic date movement, and new data is received. When Auto Play is On, the KPI date will move left as new data is obtained.
+
+  - **Pen Width**: Change the KPI line width on the tread.
+
+- **Hoc Trend**: Use this option for advanced adjustments or customizations. Here, you can add new limits or targets. You can also change the default maximum and minimum Y-Axis values.
+
+<StylizedImage
+  imgURL="img/transpara/kpi-hand-trend.png"
+  alt="Hoc Trend Panel"
+  wSize="600px"
+/>
+
+- **Raw Data**: Export the KPI trend to a .csv file for external data analysis or explore the KPI trend raw data.
+
+- **Time Range**: Define the time range used to present KPI trend data. Choose from predefined options or create a custom range. When defining custom data ranges, use the symbol described in the table below.
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>*</td>
+      <td>Current date.</td>
+    </tr>
+    <tr>
+      <td>min</td>
+      <td>Minutes.</td>
+    </tr>
+    <tr>
+      <td>hour</td>
+      <td>Hours.</td>
+    </tr>
+    <tr>
+      <td>day</td>
+      <td>Days.</td>
+    </tr>
+    <tr>
+      <td>bom</td>
+      <td>Beginning of the month.</td>
+    </tr>
+    <tr>
+      <td>boy</td>
+      <td>Beginning of the year.</td>
+    </tr>
+    <tr>
+      <td>noon</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sa</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+- **Revert**: Restore the KPI configuration to its original state when opened.
+
+- **View Detail**: Access additional information about the KPI, including responsible parties, statistics, properties, and custom attributes.
+
+- **Gauge View**: Switch between regular trend and gauge visualization modes. The gauge view shows the current KPI level in relation to a specified finite capacity, similar to a car fuel gauge.
+
+<StylizedImage
+  imgURL="img/transpara/kpi-gauge-view.png"
+  alt="Gauge view"
+  wSize="600px"
+/>
+
+## Interaction tools
+
+In addition to the features to change the way data is presented, Transpara provides interactive tools for a richer experience:
+
+- **Status Background**: Visualize KPI performance compared to reference values, if available. In the example below, when the **Status Background** is activated, you can easily check when the **Actual** value (blue) surpasses the **High Limit** (red).
+
+<StylizedImage
+  imgURL="img/transpara/kpi-status-background.gif"
+  alt="Status Background example"
+  wSize="700px"
+/>
+
+- **Box Zoom**: Select and zoom in on specific KPI data, allowing for closer inspection of time intervals or amplitudes. When you have the **Box Zoom** tool selected, you can perform different operations:
+
+  - Select an area to zoom in.
+  - Create a skinny area with your mouse to zoom in only on the X-axis.
+
+<StylizedImage
+  imgURL="img/transpara/new-box-zoom.gif"
+  alt="Box zoom example"
+  wSize="700px"
+/>
+
+When you have other tools selected, you can still perform zoom operations:
+
+- Press **ctrl** and scroll the mouse up/down to zoom in/out the X-axis.
+- Press **alt** and scroll the mouse up/down to zoom in/out the Y-axis.
+- Scroll the moute up/down to zoom in/out the trend.
+
+<StylizedImage
+  imgURL="img/transpara/new-kpi-zoom.gif"
+  alt="Zoom example"
+  wSize="700px"
+/>
+
+- **Drag Mode**: Click and drag the mouse to move the KPI trend data within the view.
+
+<StylizedImage
+  imgURL="img/transpara/kpi-move.gif"
+  alt="Move example"
+  wSize="700px"
+/>
+
+- **Cursor Mode**: Hover over the KPI trend to view values for specific instances. You can lock values on the screen by clicking.
+
+<StylizedImage
+  imgURL="img/transpara/kpi-cursor-mode.gif"
+  alt="Cursor mode example"
+  wSize="700px"
+/>
+
+- **Snap To**: Enable this option to visualize only actual data points, removing interpolated data when using Cursor Mode.
+
+- **Comment**: Add comments to the KPI trend to annotate specific points, intervals, or data points. Comments can facilitate discussions among users.
+
+  - **Point Comments**: Attach comments to individual data points.
+  - **Interval Comments**: Create comments associated with customized time intervals.
+
+  Comments appear on top of the KPI visualization, and you can respond to them, promoting user collaboration.
+
+:::info Mobile version
+All interaction functionalities are also available on mobile devices, ensuring you have access to critical data and features while on the go.
+:::

@@ -17,11 +17,11 @@ const config = {
     'docusaurus-plugin-sass',
   ],
 
-  title: 'WriteChoice BoilerPlate',
-  tagline: 'WriteChoice BoilerPlate',
+  title: 'Transpara',
+  tagline: 'Transpara',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/writechoice_logo.jpg',
+  onBrokenMarkdownLinks: 'throw',
+  favicon: 'img/favicon.jpg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -31,8 +31,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'writechoice', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-boilerplate-writechoice', // Usually your repo name.
+  organizationName: 'Transpara', // Usually your GitHub org/user name.
+  projectName: 'Transpara', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -73,16 +73,26 @@ const config = {
       // },
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255,0.9)',
+          dark: 'rgb(50, 50, 50)',
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        },
+      },
       navbar: {
-        title: 'Boilerplate',
+        title: '',
         logo: {
           alt: 'Site Logo',
-          src: 'img/writechoice_logo.jpg',
+          src: 'img/transpara.webp',
           className: 'site_logo',
         },
         items: [
           {
-            to: '/',
+            to: '/how-to-work-with-kpi-trends',
             label: 'Home',
             position: 'left',
             activeBaseRegex: "/$",
@@ -94,21 +104,21 @@ const config = {
           //   label: 'Tutorial',
           //   to: '/tutorial',
           // },
-          {
-            to: 'tutorial',
-            label: 'Tutorial',
-            position: 'left',
-            activeBaseRegex: "/tutorial",
-          },
+          // {
+          //   to: 'tutorial',
+          //   label: 'Tutorial',
+          //   position: 'left',
+          //   activeBaseRegex: "/tutorial",
+          // },
           {
             type: 'search',
             position: 'right',
           },
-          {
-            href: 'https://github.com/orgs/writechoiceorg/',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/orgs/writechoiceorg/',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -119,38 +129,38 @@ const config = {
             items: [
               {
                 label: 'Home',
-                to: '/',
+                to: '/how-to-work-with-kpi-trends',
               },
-              {
-                label: 'Tutorial',
-                to: '/tutorial',
-              },
+              // {
+              //   label: 'Tutorial',
+              //   to: '/tutorial',
+              // },
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Instagram',
-                href: 'https://www.instagram.com/write.choice/',
-              },
-              {
-                label: 'Linkedin',
-                href: 'https://www.linkedin.com/company/write-choice-technical-writing-services/',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/orgs/writechoiceorg',
-              },
-            ],
-          },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Instagram',
+          //       href: 'https://www.instagram.com/write.choice/',
+          //     },
+          //     {
+          //       label: 'Linkedin',
+          //       href: 'https://www.linkedin.com/company/write-choice-technical-writing-services/',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'More',
+          //   items: [
+          //     {
+          //       label: 'GitHub',
+          //       href: 'https://github.com/orgs/writechoiceorg',
+          //     },
+          //   ],
+          // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Transpara. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

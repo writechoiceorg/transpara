@@ -21,24 +21,15 @@ const sidebars = {
   docs: [
     {
       type: 'html',
-      value: "<span class='sidebar-title'>GETTING STARTED</span>",
+      value: "<span class='sidebar-title'>ARTICLES</span>",
       defaultStyle: true,
     },
     {
       type: 'doc',
-      id: 'homepage',
-      label: 'Home',
+      id: 'how-to-work-with-kpi-trends',
+      label: 'How to Work With KPI Trends',
       className: 'sidebar-overview',
-    },
-    {
-      type: 'category',
-      label: 'Tutorial',
-      link: {
-        type: 'doc',
-        id: 'tutorial/tutorial',
-      },
-      items: ['tutorial/create-a-document', 'tutorial/create-a-page'],
-    },
+    }
   ],
    
 };

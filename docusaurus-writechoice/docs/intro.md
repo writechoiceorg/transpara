@@ -4,10 +4,7 @@ title: Home
 sidebar_position: 1
 slug: /
 description: Homepage description.
-tags: ['home', 'guide', 'presentation', 'overview', 'contact']
+tags: []
 ---
 
-# Write Choice's Docusaurus Boilerplate
-
-This is a boilerplate for Docusaurus projects developed by WriteChoice.
-
+Temorary home page. Access the [How to Work With KPI Trends](/how-to-work-with-kpi-trends) article.
