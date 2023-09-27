@@ -77,7 +77,9 @@ Access the KPI panel features by clicking on the buttons located at the top-left
 
 - **Raw Data**: Export the KPI trend to a .csv file for external data analysis or explore the KPI trend raw data.
 
-- **Time Range**: Define the time range used to present KPI trend data. Choose from predefined options or create a custom range. When defining custom data ranges, use the symbol described in the table below.
+- **Time Range**: Define the time range used to present KPI trend data. Choose from predefined options or create a custom range. When defining custom data ranges, use the symbol described in the table below. As example, let's define a custon time range composed by the data from the last 7 days:
+  - **Start Time**: Insert **\*-7days**, meaning you want the starting time to be seven days before the current date (**\***).
+  - **End Time**: Insert **\***, meaning you want the last data point presented to correspond to the current date (real-time data).
 
 <table>
   <thead>
@@ -89,27 +91,30 @@ Access the KPI panel features by clicking on the buttons located at the top-left
   <tbody>
     <tr>
       <td>*</td>
-      <td>Current date.</td>
+      <td>
+        Current date, it will be updated constantly, reflecting the current date
+        and time.
+      </td>
     </tr>
     <tr>
       <td>min</td>
-      <td>Minutes.</td>
+      <td>Represents minutes.</td>
     </tr>
     <tr>
       <td>hour</td>
-      <td>Hours.</td>
+      <td>Represents hours.</td>
     </tr>
     <tr>
       <td>day</td>
-      <td>Days.</td>
+      <td>Represents days.</td>
     </tr>
     <tr>
       <td>bom</td>
-      <td>Beginning of the month.</td>
+      <td>Used to define the beginning of the month.</td>
     </tr>
     <tr>
       <td>boy</td>
-      <td>Beginning of the year.</td>
+      <td>USed to define the beginning of the year.</td>
     </tr>
     <tr>
       <td>noon</td>
@@ -157,11 +162,16 @@ In addition to the features to change the way data is presented, Transpara provi
   wSize="700px"
 />
 
-&nbsp When you have other tools selected, you can still perform zoom operations:
-
-- Hold ctrl and scroll the mouse up/down to zoom in/out the X-axis.
-- Hold alt and scroll the mouse up/down to zoom in/out the Y-axis.
-- Scroll the moute up/down to zoom in/out the trend.
+<p style={{marginLeft: '45px'}}>
+  When you have other tools selected, you can still perform zoom operations:
+</p>
+<ul>
+  <ul>
+    <li>Hold ctrl and scroll the mouse up/down to zoom in/out the X-axis.</li>
+    <li>Hold alt and scroll the mouse up/down to zoom in/out the Y-axis.</li>
+    <li>Scroll the moute up/down to zoom in/out the trend.</li>
+  </ul>
+</ul>
 
 <StylizedImage
   imgURL="img/transpara/new-kpi-zoom.gif"
