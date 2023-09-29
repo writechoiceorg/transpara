@@ -92,7 +92,7 @@ const config = {
         },
         items: [
           {
-            to: '/how-to-work-with-kpi-trends',
+            to: '/working-with-kpi-trends',
             label: 'Home',
             position: 'left',
             activeBaseRegex: "/$",
@@ -129,7 +129,7 @@ const config = {
             items: [
               {
                 label: 'Home',
-                to: '/how-to-work-with-kpi-trends',
+                to: '/working-with-kpi-trends',
               },
               // {
               //   label: 'Tutorial',
