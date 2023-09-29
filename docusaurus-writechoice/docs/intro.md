@@ -7,4 +7,4 @@ description: Homepage description.
 tags: []
 ---
 
-Temorary home page. Access the [How to Work With KPI Trends](/how-to-work-with-kpi-trends) article.
+Temorary home page. Access the [Working with KPI Trends](/working-with-kpi-trends) article.

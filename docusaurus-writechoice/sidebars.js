@@ -26,8 +26,8 @@ const sidebars = {
     },
     {
       type: 'doc',
-      id: 'how-to-work-with-kpi-trends',
-      label: 'How to Work With KPI Trends',
+      id: 'working-with-kpi-trends',
+      label: 'Working with KPI Trends',
       className: 'sidebar-overview',
     }
   ],
