@@ -2,9 +2,9 @@
 id: homepage
 title: Home
 sidebar_position: 1
-slug: /
+slug: /old-home
 description: Homepage description.
 tags: []
 ---
 
-Temorary home page. Access the [Working with KPI Trends](/working-with-kpi-trends) article.
+
