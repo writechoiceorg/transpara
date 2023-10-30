@@ -17,8 +17,8 @@ const config = {
     'docusaurus-plugin-sass',
   ],
 
-  title: 'Transpara',
-  tagline: 'Transpara',
+  title: 'Visual KPI',
+  tagline: 'Visual KPI',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.jpg',
@@ -32,7 +32,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Transpara', // Usually your GitHub org/user name.
-  projectName: 'Transpara', // Usually your repo name.
+  projectName: 'Documentation', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -48,7 +48,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          // routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -58,6 +58,12 @@ const config = {
         blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
       }),
     ],
@@ -73,6 +79,12 @@ const config = {
       // },
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
+      docs: {
+        sidebar: {
+          // hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {
@@ -92,24 +104,17 @@ const config = {
         },
         items: [
           {
-            to: '/working-with-kpi-trends',
+            to: '/',
             label: 'Home',
             position: 'left',
-            activeBaseRegex: "/$",
           },
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'docs',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          //   to: '/tutorial',
-          // },
-          // {
-          //   to: 'tutorial',
-          //   label: 'Tutorial',
-          //   position: 'left',
-          //   activeBaseRegex: "/tutorial",
-          // },
+          {
+            type: 'docSidebar',
+            sidebarId: 'docs',
+            position: 'left',
+            label: 'Documentation',
+            to: '/docs',
+          },
           {
             type: 'search',
             position: 'right',
@@ -129,12 +134,16 @@ const config = {
             items: [
               {
                 label: 'Home',
-                to: '/working-with-kpi-trends',
+                to: '/',
               },
-              // {
-              //   label: 'Tutorial',
-              //   to: '/tutorial',
-              // },
+              {
+                label: 'Documentation',
+                to: '/docs/',
+              },
+              {
+                label: 'FAQ',
+                to: '/docs/faq',
+              },
             ],
           },
           // {
@@ -165,6 +174,11 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
