@@ -9,7 +9,7 @@ export default function SvgFont({ data }) {
   }, []);
 
   return (
-    <div className='testContainer'>
+    <span className='testContainer'>
       <svg className="hidesvg" version="1.1" xmlns="http://www.w3.org/1999/xlink">
         <defs>
           <symbol id={data.properties.name} viewBox="0 0 1024 1024">
@@ -19,6 +19,6 @@ export default function SvgFont({ data }) {
         </defs>
       </svg>
       <svg className="icon"><use href={`#${data.properties.name}`}></use></svg>
-    </div>  
+    </span>  
   )
 }
